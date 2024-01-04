@@ -1,9 +1,7 @@
 .header {
+    display: flex;
     background: black;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 5rem;
     position: fixed;
     top: 0;

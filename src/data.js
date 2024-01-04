@@ -15,3 +15,10 @@ export const products = [
         image: "/image/duck_hat.jpg",
     },
 ];
+
+export const logoTypes = [
+    {
+        name: "react",
+        image: "logo192.png",
+    },
+];

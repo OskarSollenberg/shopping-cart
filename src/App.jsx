@@ -5,10 +5,17 @@ import Header from "./components/header/Header";
 import { useState } from "react";
 
 function App() {
+    const [numbOfCartItems, setNumbOfCartItems] = useState(0);
+
+    function handleAddCartItem() {
+        const newNumbOfCartItems = numbOfCartItems + 1;
+        setNumbOfCartItems(newNumbOfCartItems);
+    }
+
     return (
         <div>
-            <Header />
-            <Body />
+            <Header cartItems={numbOfCartItems} />
+            <Body addItem={handleAddCartItem} />
         </div>
     );
 }

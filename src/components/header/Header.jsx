@@ -4,13 +4,14 @@ import { logoTypes } from "../../data";
 {
 }
 
-export default function Header() {
+export default function Header(props) {
+    const { cartItems } = props;
     return (
         <header className="header">
             {logoTypes.map((logo) => (
                 <img src={logo.url} className={logo.type}></img>
             ))}
-            <Cart />
+            <Cart cartItems={cartItems} />
         </header>
     );
 }

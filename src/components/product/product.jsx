@@ -1,13 +1,16 @@
 import "./productStyles.css";
+import Button from "../button/Button";
 
 export default function Product(props) {
-    const { name, price, image, addItem, saveItem } = props;
+    const { name, price, image, addItem } = props;
 
     return (
         <div className="product">
-            <img className="product__img" src={image} alt="" />
-            <p>{name}</p>
-            <button onClick={addItem}>{price}</button>
+            <div>
+                <img className="product__img" src={image} alt="" />
+                <p className="product__price">{price} kr</p>
+            </div>
+            <Button value={"Add to cart"} addItem={addItem} price={price} />
         </div>
     );
 }

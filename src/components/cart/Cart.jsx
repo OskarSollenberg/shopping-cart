@@ -6,7 +6,15 @@ export default function Cart(props) {
 
     return (
         <div className="cart">
-            <img src={cartImage.url} alt="" />({cartItems})
+            <img className="cart__img" src={cartImage.url} alt="" />
+            {cartItems > 0 && <p className="cart__counter">{cartItems} </p>}
+            <div className="cart__list">
+                <p>Cart Item</p>
+                <p>Cart Item</p>
+                <p>Cart Item</p>
+                <p>Cart Item</p>
+                <p>Cart Item</p>
+            </div>
         </div>
     );
 }

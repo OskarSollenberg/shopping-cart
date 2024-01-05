@@ -1,6 +1,29 @@
 .cart {
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     margin-left: auto;
-    color: blue;
+    color: black;
     margin-right: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+.cart__img {
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.cart__counter {
+    transform: translateY(-15px);
+}
+
+.cart__list {
+    padding: 2rem;
+    top: 100%;
+    right: 0;
+    margin-right: 8rem;
+    background: rgb(182, 31, 31);
+    position: absolute;
+    width: 10rem;
 }

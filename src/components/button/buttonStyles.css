@@ -1,0 +1,9 @@
+.button {
+    padding: 1rem 2rem;
+    background-color: salmon;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.button:active {
+}

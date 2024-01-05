@@ -1,7 +1,7 @@
 .header {
     display: flex;
     align-items: center;
-    background: black;
+    background: rgb(202, 77, 184);
     color: white;
     height: 5rem;
     width: 100vw;

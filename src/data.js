@@ -16,10 +16,12 @@ export const products = [
     },
 ];
 
-export const logoTypes = [
-    {
-        name: "react",
-        url: "logo192.png",
-        type: "logo",
-    },
-];
+export const headerLogo = {
+    name: "react",
+    url: "logo192.png",
+};
+
+export const cartImage = {
+    name: "cart",
+    url: "/image/cart.png",
+};

@@ -1,6 +1,12 @@
 import "./cartStyles.css";
+import { cartImage } from "../../data";
 
 export default function Cart(props) {
     const { cartItems } = props;
-    return <div className="cart">Cart({cartItems})</div>;
+
+    return (
+        <div className="cart">
+            <img src={cartImage.url} alt="" />({cartItems})
+        </div>
+    );
 }

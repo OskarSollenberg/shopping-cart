@@ -2,23 +2,24 @@ export const products = [
     {
         name: "Shirt",
         price: 150,
-        image: "/image/shirt.jpg",
+        url: "/image/shirt.jpg",
     },
     {
         name: "Pants",
         price: 250,
-        image: "/image/pants.jpg",
+        url: "/image/pants.jpg",
     },
     {
         name: "Duck Hat",
         price: 150,
-        image: "/image/duck_hat.jpg",
+        url: "/image/duck_hat.jpg",
     },
 ];
 
 export const logoTypes = [
     {
         name: "react",
-        image: "logo192.png",
+        url: "logo192.png",
+        type: "logo",
     },
 ];

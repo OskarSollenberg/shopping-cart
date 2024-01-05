@@ -18,12 +18,20 @@
     transform: translateY(-15px);
 }
 
-.cart__list {
-    padding: 2rem;
+.cart:hover .cart__list {
     top: 100%;
-    right: 0;
-    margin-right: 8rem;
-    background: rgb(182, 31, 31);
+}
+.cart__list {
+    right: 0rem;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    top: -40rem;
+    border: 1px solid #61d9fb;
     position: absolute;
-    width: 10rem;
+    transition: all 0.5s ease-in-out;
 }

@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    background-color: beige;
+    border-bottom: 1px solid #61d9fb;
     color: white;
     height: 5rem;
     width: 100vw;

@@ -2,8 +2,12 @@
     position: relative;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #61d9fb;
+    /* border-bottom: 1px solid #61d9fb; */
     color: white;
+    background-color: white;
+    border-bottom: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
     height: 5rem;
     width: 100vw;
     font-size: 2rem;
@@ -12,5 +16,4 @@
 .logo {
     margin-left: 2rem;
     width: 2rem;
-    border-radius: 2rem;
 }

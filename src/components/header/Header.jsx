@@ -5,7 +5,7 @@ import { logoTypes } from "../../data";
 export default function Header() {
     return (
         <header className="header">
-            <img src={image} alt="react-logo" />
+            <div className="Logo">Logo</div>
             <Cart />
         </header>
     );

@@ -1,10 +1,13 @@
 .header {
     display: flex;
+    align-items: center;
     background: black;
     color: white;
     height: 5rem;
-    position: fixed;
-    top: 0;
     width: 100vw;
-    z-index: 1;
+    font-size: 2rem;
+}
+
+.Logo {
+    margin-left: 2rem;
 }

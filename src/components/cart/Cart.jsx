@@ -1,9 +1,5 @@
 import "./cartStyles.css";
 
 export default function Cart() {
-    return (
-        <div className="cart">
-            <h1>Cart(0)</h1>
-        </div>
-    );
+    return <div className="cart">Cart(0)</div>;
 }

@@ -16,7 +16,6 @@ function App() {
         <div>
             <Header cartItems={numbOfCartItems} />
             <Body addItem={handleAddCartItem} />
-            <Body addItem={handleAddCartItem} />
         </div>
     );
 }

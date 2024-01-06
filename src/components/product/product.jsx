@@ -7,8 +7,9 @@ export default function Product(props) {
     return (
         <div className="product">
             <div>
-                <img className="product__img" src={image} alt="" />
                 <p className="product__price">{price} kr</p>
+                <img className="product__img" src={image} alt="" />
+                <p>{name}</p>
             </div>
             <Button value={"Add to cart"} addItem={addItem} price={price} />
         </div>

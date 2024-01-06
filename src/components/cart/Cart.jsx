@@ -1,6 +1,7 @@
 import "./cartStyles.css";
 import { cartImage } from "../../data";
 import { useState } from "react";
+import Button from "../button/Button";
 
 export default function Cart(props) {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -31,11 +32,9 @@ export default function Cart(props) {
             </div>
 
             <div className={`cart__list ${isCartOpen && "cart__list--active"}`}>
-                <p>Cart Item</p>
-                <p>Cart Item</p>
-                <p>Cart Item</p>
-                <p>Cart Item</p>
-                <p>Cart Item</p>
+                <p className="cart__list-item">Cart Item</p>
+
+                <Button value={"Checkout"} />
             </div>
         </>
     );

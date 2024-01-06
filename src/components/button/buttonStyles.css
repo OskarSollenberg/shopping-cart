@@ -1,12 +1,12 @@
 .button {
     padding: 1rem 2rem;
     background: none;
-
     border-radius: 0.5rem;
     border: 1px solid black;
     transition: all 0.2s;
     transform-origin: center center;
     color: black;
+    max-width: 10rem;
 }
 
 .button:hover {

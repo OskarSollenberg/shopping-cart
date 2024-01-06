@@ -1,17 +1,18 @@
 .button {
     padding: 1rem 2rem;
-    background-color: #61d9fb;
+    background: none;
+
     border-radius: 0.5rem;
-    border: none;
+    border: 1px solid black;
     transition: all 0.2s;
     transform-origin: center center;
-    color: white;
+    color: black;
 }
 
 .button:hover {
     transform: scale(1.1);
     border-radius: 0.1rem;
-    background-color: #ff8caf;
+    background-color: #a62b2b;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
         rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }

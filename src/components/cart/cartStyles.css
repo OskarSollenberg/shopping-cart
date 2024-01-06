@@ -8,68 +8,83 @@
 
 .cart__img {
     flex: 1;
-    width: 2rem;
+    width: 4rem;
     margin-left: 1rem;
 }
 .cart__img {
+    border: 1px solid black;
+    cursor: pointer;
     padding: 1rem;
     width: 1.5rem;
     margin-left: 1rem;
     border-radius: 0.5rem;
 
-    transition: transform 0.7s ease-in-out, scale 0.5s, background-color 0.5s,
-        box-shadow 0.5s, padding 0.7s;
+    transition-property: padding, top, border-radius;
+    transition-duration: 0.2s, 1s;
+    transition-delay: 0.2s, 1s;
+    transition-timing-function: linear;
 }
 .cart__img:hover {
     cursor: pointer;
-    background-color: #ff8caf;
 
-    scale: 1.1;
     margin-left: 1rem;
-
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.cart__img--active {
-    scale: 1.1;
-    margin-left: 1rem;
-    transform: rotateY(180deg);
-    padding-right: 14.7rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
-    background-color: #61d9fb;
+.cart__img--active {
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding-right: 14rem;
+    border: 1px solid black;
 }
 .cart__img--active:hover {
+    scale: 1;
+    box-shadow: none;
 }
 
 .cart__counter {
-    transition: top 0.3s ease-in-out, opacity 0.7s ease-in-out;
     position: absolute;
     opacity: 0;
     top: 50%;
 }
 .cart__counter--active {
     opacity: 1;
-    top: -12px;
-    right: 4px;
+    top: -8px;
+    right: 8px;
+}
+
+.cart:hover .cart__counter {
+    opacity: 0;
 }
 
 .cart__list {
-    background-color: #61d9fb;
-    color: white;
-    top: 102%;
-    width: 14rem;
-    pointer-events: none;
-    padding: 2rem;
+    background-color: #a62b2b;
+
     position: absolute;
-    transition: all 0.7s ease-in-out;
+    pointer-events: none;
+    font-size: 1rem;
+    /* background-color: #61d9fb; */
+    border: 1px solid black;
+    color: black;
+    width: 12.5rem;
+    padding: 2rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+
+    transition-property: top, right;
+    transition-duration: 0.1s, 0.1s;
+    transition-delay: 0s, 0.2s;
+    transition-timing-function: ease-in-out;
+
+    top: 120%;
     right: -40rem;
-    opacity: 0;
-    border-radius: 1rem;
 }
 
 .cart__list--active {
-    opacity: 1;
     right: 2rem;
+    top: 84%;
+
+    transition-property: right, top;
+    transition-duration: 0.4s, 0.1s;
+    transition-delay: 0s, 0.6s;
+    transition-timing-function: ease-in-out;
 }

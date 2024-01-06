@@ -23,7 +23,7 @@ export default function Cart(props) {
                 />
                 <p
                     className={`cart__counter ${
-                        cartItems > 0 && "cart__counter--active"
+                        isCartOpen || (cartItems > 0 && "cart__counter--active")
                     }`}
                 >
                     {cartItems}{" "}

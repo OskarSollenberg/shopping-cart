@@ -1,6 +1,5 @@
 import Product from "../product/Product";
 import { products } from "../../data";
-
 import "./bodyStyles.css";
 
 export default function Body(props) {

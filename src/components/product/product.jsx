@@ -11,7 +11,12 @@ export default function Product(props) {
                 <img className="product__img" src={image} alt="" />
                 <p>{name}</p>
             </div>
-            <Button value={"Add to cart"} addItem={addItem} price={price} />
+            <Button
+                value={"Add to cart"}
+                name={name}
+                addItem={addItem}
+                price={price}
+            />
         </div>
     );
 }

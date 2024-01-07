@@ -2,20 +2,28 @@
 import Body from "./components/body/Body";
 import Header from "./components/header/Header";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Hero from "./components/hero/Hero";
 
 function App() {
-    const [numbOfCartItems, setNumbOfCartItems] = useState(0);
+    const [cartItems, setCartItems] = useState([]);
 
-    function handleAddCartItem() {
-        const newNumbOfCartItems = numbOfCartItems + 1;
-        setNumbOfCartItems(newNumbOfCartItems);
+    useEffect(() => {
+        const cartItems = localStorage.getItem("cartItems") || "[]";
+        setCartItems(JSON.parse(cartItems));
+    }, []);
+
+    function handleAddCartItem(name) {
+        setCartItems((prev) => {
+            const newCartItems = [...prev, name];
+            localStorage.setItem("cartItems", JSON.stringify(newCartItems));
+            return newCartItems;
+        });
     }
 
     return (
         <div>
-            <Header cartItems={numbOfCartItems} />
+            <Header cartItems={cartItems} />
             <Hero />
             <Body addItem={handleAddCartItem} />
         </div>

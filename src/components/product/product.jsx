@@ -14,8 +14,8 @@ export default function Product(props) {
             <Button
                 value={"Add to cart"}
                 name={name}
-                addItem={addItem}
                 price={price}
+                onClick={() => addItem(name)}
             />
         </div>
     );

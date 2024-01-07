@@ -52,9 +52,9 @@
     right: 8px;
 }
 
-.cart:hover .cart__counter {
+/* .cart:hover .cart__counter {
     opacity: 0;
-}
+} */
 
 .cart__list {
     z-index: 20;
